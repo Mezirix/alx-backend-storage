@@ -18,3 +18,6 @@ def nginx_stats_check():
         print("\tmethod {}: {}".format(method, method_count))
     status = collec_nginx.count_documents({"method": "GET", "path": "/status"})
     print("{} status check".format(status))
+
+if __name__ == "__main__":
+    nginx_stats_check()
