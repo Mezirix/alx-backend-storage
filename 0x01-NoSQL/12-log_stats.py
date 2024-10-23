@@ -6,7 +6,7 @@ from pymongo import MongoClient
 def main():
     """
     Main function that connects to the MongoDB logs database,
-    retrieves the number of logs per method and prints the results.
+    retrieves the number of logs per method and prints out the results.
     """
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs_collection = client.logs.nginx
